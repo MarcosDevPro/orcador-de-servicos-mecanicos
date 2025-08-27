@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orçador Mecânico</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Orçador On-line de Serviços</h1>
+
+      <section>
+        <form id="formOrcamento">
+          <div class="form-group">
+            <label for="servico">Serviço:</label>
+            <select id="servico" required>
+              <option value="">Selecione</option>
+              <option value="oleo">Troca de Óleo</option>
+              <option value="freios">Revisão de Freios</option>
+              <option value="suspensao">Suspensão</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="veiculo">Tipo de veículo:</label>
+            <select id="veiculo" required aria-required="true">
+              <option value="">Selecione</option>
+              <option value="leve">Carro Leve</option>
+              <option value="pesado">Veículo Pesado</option>
+            </select>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label>
+              <input type="checkbox" id="lavagem" />
+              Incluir lavagem
+            </label>
+          </div>
+
+          <button type="submit">Calcular Orçamento</button>
+        </form>
+      </section>
+
+      <section id="resultado" aria-live="polite"></section>
+
+      <section id="historico">
+        <h2>Histórico de Orçamentos</h2>
+        <div id="cardsHistorico"></div>
+        <button id="limparHistorico" class="btn-limpar">
+          Limpar Histórico
+        </button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
