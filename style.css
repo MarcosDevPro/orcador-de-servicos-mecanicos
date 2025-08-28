@@ -6,7 +6,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #fff;
+  color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
 }
